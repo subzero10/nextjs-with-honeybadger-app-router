@@ -28,7 +28,7 @@ async function getData(fail: boolean = false) {
 }
 
 export default async function Page({ searchParams }: { searchParams?: { fail?: string }  }) {
-    const shouldFail = searchParams.fail === 'true';
+    const shouldFail = searchParams?.fail === 'true';
     const data = await getData(shouldFail);
 
     return (<div>Data Fetching Error Example: { data.data.length }</div>);
