@@ -1,5 +1,12 @@
 This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
+## What is this?
+
+This project demonstrates Honeybadger's error reporting for Next.js, using the new App Router that comes with Next.js v13:
+- Error thrown while rendering in `app/counter/page.tsx` (`http://localhost:3000/counter?fail=true`).
+- Error thrown while data fetching in `app/data-fetching/page.tsx` (`http://localhost:3000/data-fetching?fail=true`).
+- Error thrown in middleware (`http://localhost:3000/middleware-test`), which will be caught with the global `window.onerror` handler.
+
 ## Getting Started
 
 First, run the development server:
