@@ -2,6 +2,7 @@ const { setupHoneybadger } = require('./honeybadger.setup')
 
 const moduleExports = {
     // ... Your existing module.exports object goes here
+    productionBrowserSourceMaps: true
 }
 
 // Showing default values
